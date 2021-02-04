@@ -1,0 +1,12 @@
+.box{
+    height: 200px;
+    width: 400px;
+    border: 10px solid blue;
+    overflow: scroll;
+}
+.box2{
+    height: 200px;
+    width: 400px;
+    border: 10px solid blue;
+    overflow: hidden;
+}

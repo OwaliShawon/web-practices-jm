@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-frame{
+            width: 200px;
+            height: 200px;
+            border: 10px solid maroon;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+            
+
+        }
+
+        .photo-frame .photo img{
+            width: 100%;
+        }
+        .photo-detail{
+            position: absolute;
+            display: none;
+            width: 200px;
+            height: 200px;
+                    }
+        .photo-frame:hover .photo-detail{
+            display: block;
+            background-color: aqua;
+
+        }
+        .photo-frame:hover .photo img{
+            overflow: hidden;
+            transform: scale(1.4);
+            transition: transform 3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>photo book</h1>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/Shop advert.png" alt="">
+            </div>
+
+            <div class="photo-detail">
+                <h3>royal bengal tiger</h3>
+                <p> numquam ratione sit consectetur vitae ipsa! Cupiditate harum nam aspernatur assumenda? Cupiditate, quisquam alias?</p>
+            </div>
+            
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/Shop advert.png" alt="">
+            </div>
+
+            <div class="photo-detail">
+                <h3>royal bengal tiger</h3>
+                <p> numquam ratione sit consectetur vitae ipsa! Cupiditate harum nam aspernatur assumenda? Cupiditate, quisquam alias?</p>
+            </div>
+            
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/Shop advert.png" alt="">
+            </div>
+
+            <div class="photo-detail">
+                <h3>royal bengal tiger</h3>
+                <p> numquam ratione sit consectetur vitae ipsa! Cupiditate harum nam aspernatur assumenda? Cupiditate, quisquam alias?</p>
+            </div>
+            
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/Shop advert.png" alt="">
+            </div>
+
+            <div class="photo-detail">
+                <h3>royal bengal tiger</h3>
+                <p> numquam ratione sit consectetur vitae ipsa! Cupiditate harum nam aspernatur assumenda? Cupiditate, quisquam alias?</p>
+            </div>
+            
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/Shop advert.png" alt="">
+            </div>
+
+            <div class="photo-detail">
+                <h3>royal bengal tiger</h3>
+                <p> numquam ratione sit consectetur vitae ipsa! Cupiditate harum nam aspernatur assumenda? Cupiditate, quisquam alias?</p>
+            </div>
+            
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/Shop advert.png" alt="">
+            </div>
+
+            <div class="photo-detail">
+                <h3>royal bengal tiger</h3>
+                <p> numquam ratione sit consectetur vitae ipsa! Cupiditate harum nam aspernatur assumenda? Cupiditate, quisquam alias?</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
