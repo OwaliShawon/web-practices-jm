@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template, dynamically create HTML elements based on data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Template, dynamically create HTML elements based on data -->
+    <ul id="user-list">
+
+    </ul>
+
+
+</body>
+<script>
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response => response.json())
+        .then(data => showList(data));
+
+    function showList(users) {
+        let userHTML = "";
+        users.forEach(user => {
+            userHTML = userHTML + `<div class="user">
+                <h2>Name: ${user.name}</h2>
+                <h3>Username: ${user.username}</h3>
+                <p>User Email: ${user.email}</p>
+                <p>City: ${user.address.city}</p>
+                </div>
+            `;
+        });
+        const ul = document.getElementById('user-list');
+        ul.innerHTML = userHTML;
+    }
+
+</script>
+
+</html>
